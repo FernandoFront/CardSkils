@@ -1,0 +1,61 @@
+h2{
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.skills-container h2:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 8px auto;
+}
+.card{
+	background-color: #0071f0;
+	border-radius: 20px;
+	width: 420px;
+	height: 480px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	margin:0 auto;
+}
+.avatar img{
+	border-radius: 100%;
+	margin: 5em auto .1em auto;
+}
+
+.summary{
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: .5em;
+}
+.summary a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
+.skills-container{
+	position: absolute;
+	width: 380px;
+	padding: 10px 20px;
+	bottom: -300px;
+	background-color: #fff;
+	transition: all .8s;
+}
+.skills-container a{
+	margin: 10px;
+}
+
+.card:hover .summary{
+	opacity: 0;
+	transition: all .6s;
+}
+
+.card:hover .skills-container{
+	bottom:0;
+	transition: all .8s .6s;
+}
